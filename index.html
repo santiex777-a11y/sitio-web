@@ -1,205 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hurones — Guía de la madriguera</title>
-<meta name="description" content="Una guía visual sobre el comportamiento, cuidados y variedades de color del hurón doméstico.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hurones — Guía de la madriguera</title>
+    <meta
+      name="description"
+      content="Una guía visual sobre el comportamiento, cuidados y variedades de color del hurón doméstico."
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="estilos.css">
-</head>
-<body>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <!-- ============ NAV ============ -->
+    <header class="site-header">
+      <div class="wrap nav-inner">
+        <a href="#inicio" class="brand"
+          >Huron<span class="brand-dot">.</span></a
+        >
 
-<!-- ============ NAV ============ -->
-<header class="site-header">
-  <div class="wrap nav-inner">
-    <a href="#inicio" class="brand">Huron<span class="brand-dot">.</span></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-burger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </label>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-burger" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
-    </label>
+        <nav class="site-nav">
+          <a href="#comportamiento">Comportamiento</a>
+          <a href="#cuidados">Cuidados</a>
+          <a href="#colores">Variedades</a>
+          <a href="#adopcion">Adopción</a>
+        </nav>
+      </div>
+    </header>
 
-    <nav class="site-nav">
-      <a href="#comportamiento">Comportamiento</a>
-      <a href="#cuidados">Cuidados</a>
-      <a href="#colores">Variedades</a>
-      <a href="#adopcion">Adopción</a>
-    </nav>
-  </div>
-</header>
+    <main id="contenido">
+      <!-- ============ HERO — la entrada de la madriguera ============ -->
+      <section id="inicio" class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Mustela putorius furo</p>
+            <h1>
+              El hurón no<br /><em>camina</em> por tu casa.<br />La
+              <em>excava</em>.
+            </h1>
+            <p class="lede">
+              Una guía breve sobre cómo piensa, duerme, juega y se cuida un
+              hurón doméstico — escrita para quien está considerando compartir
+              la madriguera con uno.
+            </p>
+            <div class="hero-actions">
+              <a href="#comportamiento" class="btn btn-primary"
+                >Entrar a la madriguera ↓</a
+              >
+            </div>
+          </div>
 
-<main id="contenido">
-
-  <!-- ============ HERO — la entrada de la madriguera ============ -->
-  <section id="inicio" class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Mustela putorius furo</p>
-        <h1>El hurón no<br><em>camina</em> por tu casa.<br>La <em>excava</em>.</h1>
-        <p class="lede">Una guía breve sobre cómo piensa, duerme, juega y se cuida un hurón doméstico — escrita para quien está considerando compartir la madriguera con uno.</p>
-        <div class="hero-actions">
-          <a href="#comportamiento" class="btn btn-primary">Entrar a la madriguera ↓</a>
+          <div class="hero-figure">
+            <div class="img-slot" style="--ratio: 4/5">
+              <img
+                src="https://thumbs.dreamstime.com/b/un-hur%C3%B3n-dom%C3%A9stico-jugando-en-la-hierba-con-juguete-largo-del-t%C3%BAnel-azul-mirando-fuera-rusia-de-mosc%C3%BA-236460941.jpg"
+                alt="hurón sable asomado de un túnel de juego"
+              />
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="hero-figure">
-        <div class="img-slot" style="--ratio:4/5;">
-          <span class="img-slot-label">FOTO — hurón sable asomado de un túnel de juego</span>
+        <!-- franja de datos rápidos -->
+        <div class="stats-strip">
+          <div class="wrap stats-grid">
+            <div class="stat">
+              <span class="stat-num">14–18h</span
+              ><span class="stat-label">de sueño al día</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">6–10</span
+              ><span class="stat-label">años de esperanza de vida</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">Mustélido</span
+              ><span class="stat-label">pariente del visón y la nutria</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">~1 kg</span
+              ><span class="stat-label">peso adulto promedio</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- franja de datos rápidos -->
-    <div class="stats-strip">
-      <div class="wrap stats-grid">
-        <div class="stat"><span class="stat-num">14–18h</span><span class="stat-label">de sueño al día</span></div>
-        <div class="stat"><span class="stat-num">6–10</span><span class="stat-label">años de esperanza de vida</span></div>
-        <div class="stat"><span class="stat-num">Mustélido</span><span class="stat-label">pariente del visón y la nutria</span></div>
-        <div class="stat"><span class="stat-num">~1 kg</span><span class="stat-label">peso adulto promedio</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ COMPORTAMIENTO — primera galería ============ -->
-  <section id="comportamiento" class="section section-burrow-1">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Galería 01</p>
-        <h2>Cómo habla un hurón sin decir nada</h2>
-        <p class="section-intro">No ladran ni maúllan: su lenguaje es físico. Estas son las tres señales que vas a reconocer primero.</p>
-      </div>
-
-      <div class="behavior-track">
-
-        <article class="behavior-card">
-          <div class="img-slot" style="--ratio:1/1;">
-            <span class="img-slot-label">FOTO — hurón en pleno "baile de guerra"</span>
+      <!-- ============ COMPORTAMIENTO — primera galería ============ -->
+      <section id="comportamiento" class="section section-burrow-1">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Galería 01</p>
+            <h2>Cómo habla un hurón sin decir nada</h2>
+            <p class="section-intro">
+              No ladran ni maúllan: su lenguaje es físico. Estas son las tres
+              señales que vas a reconocer primero.
+            </p>
           </div>
-          <h3>El baile de guerra</h3>
-          <p>Saltos laterales, lomo arqueado y una carrera errática por la habitación. No es agresión: es la máxima expresión de alegría del hurón, casi siempre acompañada de...</p>
-        </article>
 
-        <article class="behavior-card">
-          <div class="img-slot" style="--ratio:1/1;">
-            <span class="img-slot-label">FOTO — primer plano, hurón vocalizando</span>
+          <div class="behavior-track">
+            <article class="behavior-card">
+              <div class="img-slot" style="--ratio: 1/1">
+                <img
+                  src="https://i.redd.it/kmlofo37psr41.jpg"
+                  alt="La danza de guerra del huron"
+                />
+              </div>
+              <h3>El baile de guerra</h3>
+              <p>
+                Saltos laterales, lomo arqueado y una carrera errática por la
+                habitación. No es agresión: es la máxima expresión de alegría
+                del hurón, casi siempre acompañada de...
+              </p>
+            </article>
+
+            <article class="behavior-card">
+              <div class="img-slot" style="--ratio: 1/1">
+                <img
+                  src="https://static.wixstatic.com/media/cd9b80_74b66605684543feb3b291395ee5e3b3~mv2.jpg/v1/fill/w_616,h_408,al_c,lg_1,q_80,enc_avif,quality_auto/cd9b80_74b66605684543feb3b291395ee5e3b3~mv2.jpg"
+                  alt="Primer plano del HurON"
+                />
+              </div>
+              <h3>El "dooking"</h3>
+              <p>
+                Un chasquido gutural y repetido, parecido al cacareo de una
+                gallina pequeña. Es el sonido de un hurón contento — suele oírse
+                durante el juego o al perseguir algo.
+              </p>
+            </article>
+
+            <article class="behavior-card">
+              <div class="img-slot" style="--ratio: 1/1">
+                <img
+                  src="https://i.pinimg.com/1200x/a2/5a/9f/a25a9fddf4498beabfca386b7f057c74.jpg"
+                  alt="Huron Dormido"
+                />
+              </div>
+              <h3>El sueño profundo</h3>
+              <p>
+                Duermen tan pesado que muchos dueños primerizos se asustan
+                pensando que están enfermos o algo peor. Es normal: forma parte
+                de su ciclo natural de siestas largas.
+              </p>
+            </article>
           </div>
-          <h3>El "dooking"</h3>
-          <p>Un chasquido gutural y repetido, parecido al cacareo de una gallina pequeña. Es el sonido de un hurón contento — suele oírse durante el juego o al perseguir algo.</p>
-        </article>
+        </div>
+      </section>
 
-        <article class="behavior-card">
-          <div class="img-slot" style="--ratio:1/1;">
-            <span class="img-slot-label">FOTO — hurón dormido, ovillado en una hamaca</span>
+      <!-- ============ CUIDADOS — segunda galería, más profunda ============ -->
+      <section id="cuidados" class="section section-burrow-2">
+        <div class="wrap">
+          <div class="section-head section-head-light">
+            <p class="eyebrow">Galería 02</p>
+            <h2>Lo que necesita una madriguera de verdad</h2>
+            <p class="section-intro">
+              Cuatro pilares antes de traer un hurón a casa. Ninguno es
+              opcional.
+            </p>
           </div>
-          <h3>El sueño profundo</h3>
-          <p>Duermen tan pesado que muchos dueños primerizos se asustan pensando que están enfermos o algo peor. Es normal: forma parte de su ciclo natural de siestas largas.</p>
-        </article>
 
+          <div class="care-grid">
+            <article class="care-card">
+              <span class="care-index">01</span>
+              <h3>Espacio para excavar</h3>
+              <p>
+                Jaula amplia de varios niveles, con tubos, hamacas y un rincón
+                oscuro para dormir. Fuera de la jaula, mínimo 3–4 horas diarias
+                de juego supervisado.
+              </p>
+            </article>
+
+            <article class="care-card">
+              <span class="care-index">02</span>
+              <h3>Dieta carnívora estricta</h3>
+              <p>
+                Los hurones son carnívoros obligados: necesitan alimento alto en
+                proteína animal y grasa, bajo en fibra. No toleran dietas
+                basadas en cereales.
+              </p>
+            </article>
+
+            <article class="care-card">
+              <span class="care-index">03</span>
+              <h3>Veterinario especializado</h3>
+              <p>
+                No todos los veterinarios tratan hurones. Revisiones anuales,
+                vacuna antirrábica y control de la glándula adrenal son parte
+                del cuidado básico.
+              </p>
+            </article>
+
+            <article class="care-card">
+              <span class="care-index">04</span>
+              <h3>A prueba de hurones</h3>
+              <p>
+                Cierran huecos, mastican goma espuma y trepan donde no deberían.
+                Un espacio "ferret-proof" evita la mayoría de las urgencias
+                veterinarias.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ COLORES — la parte más visual ============ -->
+      <section id="colores" class="section section-burrow-1">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Galería 03</p>
+            <h2>Un mismo animal, cinco pelajes</h2>
+            <p class="section-intro">
+              El color no cambia el temperamento — pero sí ayuda a identificar
+              líneas y variedades en la cría responsable.
+            </p>
+          </div>
+
+          <div class="color-grid">
+            <figure class="color-card">
+              <div class="img-slot" style="--ratio: 3/4">
+                <img
+                  src="https://thumbs.dreamstime.com/b/retrato-del-hur%C3%B3n-del-sable-96768900.jpg"
+                  alt="Huron sable"
+                />
+              </div>
+              <figcaption>
+                <strong>Sable</strong
+                ><span>Máscara oscura, cuerpo café — el más común</span>
+              </figcaption>
+            </figure>
+            <figure class="color-card">
+              <div class="img-slot" style="--ratio: 3/4">
+                <img
+                  src="https://preview.redd.it/albino-ferrets-in-the-outdoors-v0-bkw5vhozvcle1.jpg?width=1080&crop=smart&auto=webp&s=8fbcd159a9840e75a402466d21b0ed9fd785c4b6"
+                  alt="Huron Albino"
+                />
+              </div>
+              <figcaption>
+                <strong>Albino</strong
+                ><span>Pelaje blanco, ojos rojos o rosados</span>
+              </figcaption>
+            </figure>
+            <figure class="color-card">
+              <div class="img-slot" style="--ratio: 3/4">
+                <img
+                  src="https://thumbs.dreamstime.com/b/hur%C3%B3n-adulto-de-jill-del-color-de-canela-98110969.jpg?w=576"
+                  alt="Huron Canela"
+                />
+              </div>
+              <figcaption>
+                <strong>Canela</strong
+                ><span>Tono más claro y cálido que el sable</span>
+              </figcaption>
+            </figure>
+            <figure class="color-card">
+              <div class="img-slot" style="--ratio: 3/4">
+                <img
+                  src="https://a-z-animals.com/media/2022/10/shutterstock_99879407-1024x683.jpg"
+                  alt="Huron Panda"
+                />
+              </div>
+              <figcaption>
+                <strong>Panda</strong
+                ><span>Cabeza blanca marcada, cuerpo de color</span>
+              </figcaption>
+            </figure>
+            <figure class="color-card">
+              <div class="img-slot" style="--ratio: 3/4">
+                <img
+                  src="https://preview.redd.it/ferret-colours-have-different-life-span-v0-oz79spv7qo0e1.png?auto=webp&s=fcc274f92c0de9faef380adfe896e09f8caa6e26"
+                  alt="Huron Plateado"
+                />
+              </div>
+              <figcaption>
+                <strong>Plateado</strong
+                ><span>Base clara con pelos de guardia oscuros</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ADOPCIÓN — salida de la madriguera ============ -->
+      <section id="adopcion" class="section section-den">
+        <div class="wrap adopcion-grid">
+          <div class="img-slot adopcion-figure" style="--ratio: 4/5">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5zY4AFpONbSCMbsPkQkShKG_LZvQTR9B5q2i31hrH9d2Pj_WioNjaq4E&s=10"
+              alt="persona sosteniendo un hurón en brazos"
+            />
+          </div>
+          <div class="adopcion-copy">
+            <p class="eyebrow eyebrow-light">Antes de decidir</p>
+            <h2>
+              Un hurón no es un roedor grande.<br />Es un compromiso de una
+              década.
+            </h2>
+            <p>
+              Antes de adoptar, visita un refugio o criador responsable,
+              pregunta por el historial de salud del animal y confirma que tu
+              ciudad permite tenerlos como mascota.
+            </p>
+            <a href="#inicio" class="btn btn-light">Volver al inicio ↑</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>Proyecto académico — guía informativa sobre hurones domésticos.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ CUIDADOS — segunda galería, más profunda ============ -->
-  <section id="cuidados" class="section section-burrow-2">
-    <div class="wrap">
-      <div class="section-head section-head-light">
-        <p class="eyebrow">Galería 02</p>
-        <h2>Lo que necesita una madriguera de verdad</h2>
-        <p class="section-intro">Cuatro pilares antes de traer un hurón a casa. Ninguno es opcional.</p>
-      </div>
-
-      <div class="care-grid">
-        <article class="care-card">
-          <span class="care-index">01</span>
-          <h3>Espacio para excavar</h3>
-          <p>Jaula amplia de varios niveles, con tubos, hamacas y un rincón oscuro para dormir. Fuera de la jaula, mínimo 3–4 horas diarias de juego supervisado.</p>
-        </article>
-
-        <article class="care-card">
-          <span class="care-index">02</span>
-          <h3>Dieta carnívora estricta</h3>
-          <p>Los hurones son carnívoros obligados: necesitan alimento alto en proteína animal y grasa, bajo en fibra. No toleran dietas basadas en cereales.</p>
-        </article>
-
-        <article class="care-card">
-          <span class="care-index">03</span>
-          <h3>Veterinario especializado</h3>
-          <p>No todos los veterinarios tratan hurones. Revisiones anuales, vacuna antirrábica y control de la glándula adrenal son parte del cuidado básico.</p>
-        </article>
-
-        <article class="care-card">
-          <span class="care-index">04</span>
-          <h3>A prueba de hurones</h3>
-          <p>Cierran huecos, mastican goma espuma y trepan donde no deberían. Un espacio "ferret-proof" evita la mayoría de las urgencias veterinarias.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ COLORES — la parte más visual ============ -->
-  <section id="colores" class="section section-burrow-1">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Galería 03</p>
-        <h2>Un mismo animal, cinco pelajes</h2>
-        <p class="section-intro">El color no cambia el temperamento — pero sí ayuda a identificar líneas y variedades en la cría responsable.</p>
-      </div>
-
-      <div class="color-grid">
-        <figure class="color-card">
-          <div class="img-slot" style="--ratio:3/4;"><span class="img-slot-label">FOTO — hurón sable</span></div>
-          <figcaption><strong>Sable</strong><span>Máscara oscura, cuerpo café — el más común</span></figcaption>
-        </figure>
-        <figure class="color-card">
-          <div class="img-slot" style="--ratio:3/4;"><span class="img-slot-label">FOTO — hurón albino</span></div>
-          <figcaption><strong>Albino</strong><span>Pelaje blanco, ojos rojos o rosados</span></figcaption>
-        </figure>
-        <figure class="color-card">
-          <div class="img-slot" style="--ratio:3/4;"><span class="img-slot-label">FOTO — hurón canela</span></div>
-          <figcaption><strong>Canela</strong><span>Tono más claro y cálido que el sable</span></figcaption>
-        </figure>
-        <figure class="color-card">
-          <div class="img-slot" style="--ratio:3/4;"><span class="img-slot-label">FOTO — hurón panda</span></div>
-          <figcaption><strong>Panda</strong><span>Cabeza blanca marcada, cuerpo de color</span></figcaption>
-        </figure>
-        <figure class="color-card">
-          <div class="img-slot" style="--ratio:3/4;"><span class="img-slot-label">FOTO — hurón plateado</span></div>
-          <figcaption><strong>Plateado</strong><span>Base clara con pelos de guardia oscuros</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ADOPCIÓN — salida de la madriguera ============ -->
-  <section id="adopcion" class="section section-den">
-    <div class="wrap adopcion-grid">
-      <div class="img-slot adopcion-figure" style="--ratio:4/5;">
-        <span class="img-slot-label">FOTO — persona sosteniendo un hurón en brazos</span>
-      </div>
-      <div class="adopcion-copy">
-        <p class="eyebrow eyebrow-light">Antes de decidir</p>
-        <h2>Un hurón no es un roedor grande.<br>Es un compromiso de una década.</h2>
-        <p>Antes de adoptar, visita un refugio o criador responsable, pregunta por el historial de salud del animal y confirma que tu ciudad permite tenerlos como mascota.</p>
-        <a href="#inicio" class="btn btn-light">Volver al inicio ↑</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <p>Proyecto académico — guía informativa sobre hurones domésticos.</p>
-    <p class="footer-note">Todas las fotografías son espacios reservados (placeholders). Reemplázalas por imágenes propias o de banco de imágenes libre antes de publicar.</p>
-  </div>
-</footer>
-
-</body>
+    </footer>
+  </body>
 </html>
