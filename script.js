@@ -36,7 +36,7 @@ function showScene(index, direction = 1) {
     scene.setAttribute('aria-hidden', position === current ? 'false' : 'true');
   });
   progressNumber.textContent = twoDigits(current + 1);
-  progressFill.style.height = `${((current + 1) / scenes.length) * 100}%`;
+  progressFill.style.transform = `scaleY(${(current + 1) / scenes.length})`;
   announcer.textContent = `Scene ${current + 1} of ${scenes.length}: ${scenes[current].dataset.label}`;
   if (current === 7) animateBudget(scenes[current]);
   history.replaceState(null, '', `#scene-${current + 1}`);
@@ -100,6 +100,6 @@ if (requested >= 1 && requested <= scenes.length) {
     scene.classList.toggle('is-after', index > current);
   });
   progressNumber.textContent = twoDigits(current + 1);
-  progressFill.style.height = `${((current + 1) / scenes.length) * 100}%`;
+  progressFill.style.transform = `scaleY(${(current + 1) / scenes.length})`;
 }
 
