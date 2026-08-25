@@ -1,326 +1,195 @@
 <!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hurones — Guía de la madriguera</title>
-    <meta
-      name="description"
-      content="Una guía visual sobre el comportamiento, cuidados y variedades de color del hurón doméstico."
-    />
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075486">
+  <meta name="description" content="Three Days in Rio, an A2.2 English presentation by Armando Herrera.">
+  <title>Three Days in Rio · Armando Herrera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip-link" href="#presentation">Skip to presentation</a>
+  <main id="presentation" class="presentation" aria-label="Three Days in Rio presentation">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="estilos.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-    <!-- ============ NAV ============ -->
-    <header class="site-header">
-      <div class="wrap nav-inner">
-        <a href="#inicio" class="brand"
-          >Huron<span class="brand-dot">.</span></a
-        >
-
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-burger" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
-        </label>
-
-        <nav class="site-nav">
-          <a href="#comportamiento">Comportamiento</a>
-          <a href="#cuidados">Cuidados</a>
-          <a href="#colores">Variedades</a>
-          <a href="#adopcion">Adopción</a>
-        </nav>
+    <section class="scene scene-cover is-active" data-scene="1" data-label="Welcome" aria-labelledby="title-1">
+      <img class="scene-media hero-media" src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Vista_panor%C3%A1mica_R%C3%ADo_de_Janeiro_A742470-Pano20241123.jpg" alt="Panoramic view of Rio de Janeiro and Sugarloaf Mountain">
+      <div class="cover-wash"></div>
+      <div class="scene-inner cover-layout">
+        <div class="cover-copy reveal">
+          <p class="course-label">Time to Speak · Module 4</p>
+          <h1 id="title-1">Three days<br>in Rio</h1>
+          <p class="hero-subtitle">Food, football and nature</p>
+          <p class="student-line">Armando Herrera <span>·</span> English A2.2</p>
+        </div>
+        <button class="start-button" type="button" data-next>
+          <span>Press to begin</span><b aria-hidden="true">→</b>
+        </button>
       </div>
-    </header>
+      <svg class="horizon horizon-light" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true"><path d="M0 98 C135 96 190 70 290 85 S480 115 585 67 S775 85 875 55 S1050 74 1130 39 S1285 55 1440 24"/></svg>
+    </section>
 
-    <main id="contenido">
-      <!-- ============ HERO — la entrada de la madriguera ============ -->
-      <section id="inicio" class="hero">
-        <div class="wrap hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Mustela putorius furo</p>
-            <h1>
-              El hurón no<br /><em>camina</em> por tu casa.<br />La
-              <em>excava</em>.
-            </h1>
-            <p class="lede">
-              Una guía breve sobre cómo piensa, duerme, juega y se cuida un
-              hurón doméstico — escrita para quien está considerando compartir
-              la madriguera con uno.
-            </p>
-            <div class="hero-actions">
-              <a href="#comportamiento" class="btn btn-primary"
-                >Entrar a la madriguera ↓</a
-              >
-            </div>
-          </div>
-
-          <div class="hero-figure">
-            <div class="img-slot" style="--ratio: 4/5">
-              <img
-                src="https://thumbs.dreamstime.com/b/un-hur%C3%B3n-dom%C3%A9stico-jugando-en-la-hierba-con-juguete-largo-del-t%C3%BAnel-azul-mirando-fuera-rusia-de-mosc%C3%BA-236460941.jpg"
-                alt="hurón sable asomado de un túnel de juego"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!-- franja de datos rápidos -->
-        <div class="stats-strip">
-          <div class="wrap stats-grid">
-            <div class="stat">
-              <span class="stat-num">14–18h</span
-              ><span class="stat-label">de sueño al día</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">6–10</span
-              ><span class="stat-label">años de esperanza de vida</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">Mustélido</span
-              ><span class="stat-label">pariente del visón y la nutria</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">~1 kg</span
-              ><span class="stat-label">peso adulto promedio</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ COMPORTAMIENTO — primera galería ============ -->
-      <section id="comportamiento" class="section section-burrow-1">
-        <div class="wrap">
-          <div class="section-head">
-            <p class="eyebrow">Galería 01</p>
-            <h2>Cómo habla un hurón sin decir nada</h2>
-            <p class="section-intro">
-              No ladran ni maúllan: su lenguaje es físico. Estas son las tres
-              señales que vas a reconocer primero.
-            </p>
-          </div>
-
-          <div class="behavior-track">
-            <article class="behavior-card">
-              <div class="img-slot" style="--ratio: 1/1">
-                <img
-                  src="https://i.redd.it/kmlofo37psr41.jpg"
-                  alt="La danza de guerra del huron"
-                />
-              </div>
-              <h3>El baile de guerra</h3>
-              <p>
-                Saltos laterales, lomo arqueado y una carrera errática por la
-                habitación. No es agresión: es la máxima expresión de alegría
-                del hurón, casi siempre acompañada de...
-              </p>
-            </article>
-
-            <article class="behavior-card">
-              <div class="img-slot" style="--ratio: 1/1">
-                <img
-                  src="https://static.wixstatic.com/media/cd9b80_74b66605684543feb3b291395ee5e3b3~mv2.jpg/v1/fill/w_616,h_408,al_c,lg_1,q_80,enc_avif,quality_auto/cd9b80_74b66605684543feb3b291395ee5e3b3~mv2.jpg"
-                  alt="Primer plano del HurON"
-                />
-              </div>
-              <h3>El "dooking"</h3>
-              <p>
-                Un chasquido gutural y repetido, parecido al cacareo de una
-                gallina pequeña. Es el sonido de un hurón contento — suele oírse
-                durante el juego o al perseguir algo.
-              </p>
-            </article>
-
-            <article class="behavior-card">
-              <div class="img-slot" style="--ratio: 1/1">
-                <img
-                  src="https://i.pinimg.com/1200x/a2/5a/9f/a25a9fddf4498beabfca386b7f057c74.jpg"
-                  alt="Huron Dormido"
-                />
-              </div>
-              <h3>El sueño profundo</h3>
-              <p>
-                Duermen tan pesado que muchos dueños primerizos se asustan
-                pensando que están enfermos o algo peor. Es normal: forma parte
-                de su ciclo natural de siestas largas.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ CUIDADOS — segunda galería, más profunda ============ -->
-      <section id="cuidados" class="section section-burrow-2">
-        <div class="wrap">
-          <div class="section-head section-head-light">
-            <p class="eyebrow">Galería 02</p>
-            <h2>Lo que necesita una madriguera de verdad</h2>
-            <p class="section-intro">
-              Cuatro pilares antes de traer un hurón a casa. Ninguno es
-              opcional.
-            </p>
-          </div>
-
-          <div class="care-grid">
-            <article class="care-card">
-              <span class="care-index">01</span>
-              <h3>Espacio para excavar</h3>
-              <p>
-                Jaula amplia de varios niveles, con tubos, hamacas y un rincón
-                oscuro para dormir. Fuera de la jaula, mínimo 3–4 horas diarias
-                de juego supervisado.
-              </p>
-            </article>
-
-            <article class="care-card">
-              <span class="care-index">02</span>
-              <h3>Dieta carnívora estricta</h3>
-              <p>
-                Los hurones son carnívoros obligados: necesitan alimento alto en
-                proteína animal y grasa, bajo en fibra. No toleran dietas
-                basadas en cereales.
-              </p>
-            </article>
-
-            <article class="care-card">
-              <span class="care-index">03</span>
-              <h3>Veterinario especializado</h3>
-              <p>
-                No todos los veterinarios tratan hurones. Revisiones anuales,
-                vacuna antirrábica y control de la glándula adrenal son parte
-                del cuidado básico.
-              </p>
-            </article>
-
-            <article class="care-card">
-              <span class="care-index">04</span>
-              <h3>A prueba de hurones</h3>
-              <p>
-                Cierran huecos, mastican goma espuma y trepan donde no deberían.
-                Un espacio "ferret-proof" evita la mayoría de las urgencias
-                veterinarias.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ COLORES — la parte más visual ============ -->
-      <section id="colores" class="section section-burrow-1">
-        <div class="wrap">
-          <div class="section-head">
-            <p class="eyebrow">Galería 03</p>
-            <h2>Un mismo animal, cinco pelajes</h2>
-            <p class="section-intro">
-              El color no cambia el temperamento — pero sí ayuda a identificar
-              líneas y variedades en la cría responsable.
-            </p>
-          </div>
-
-          <div class="color-grid">
-            <figure class="color-card">
-              <div class="img-slot" style="--ratio: 3/4">
-                <img
-                  src="https://thumbs.dreamstime.com/b/retrato-del-hur%C3%B3n-del-sable-96768900.jpg"
-                  alt="Huron sable"
-                />
-              </div>
-              <figcaption>
-                <strong>Sable</strong
-                ><span>Máscara oscura, cuerpo café — el más común</span>
-              </figcaption>
-            </figure>
-            <figure class="color-card">
-              <div class="img-slot" style="--ratio: 3/4">
-                <img
-                  src="https://preview.redd.it/albino-ferrets-in-the-outdoors-v0-bkw5vhozvcle1.jpg?width=1080&crop=smart&auto=webp&s=8fbcd159a9840e75a402466d21b0ed9fd785c4b6"
-                  alt="Huron Albino"
-                />
-              </div>
-              <figcaption>
-                <strong>Albino</strong
-                ><span>Pelaje blanco, ojos rojos o rosados</span>
-              </figcaption>
-            </figure>
-            <figure class="color-card">
-              <div class="img-slot" style="--ratio: 3/4">
-                <img
-                  src="https://thumbs.dreamstime.com/b/hur%C3%B3n-adulto-de-jill-del-color-de-canela-98110969.jpg?w=576"
-                  alt="Huron Canela"
-                />
-              </div>
-              <figcaption>
-                <strong>Canela</strong
-                ><span>Tono más claro y cálido que el sable</span>
-              </figcaption>
-            </figure>
-            <figure class="color-card">
-              <div class="img-slot" style="--ratio: 3/4">
-                <img
-                  src="https://a-z-animals.com/media/2022/10/shutterstock_99879407-1024x683.jpg"
-                  alt="Huron Panda"
-                />
-              </div>
-              <figcaption>
-                <strong>Panda</strong
-                ><span>Cabeza blanca marcada, cuerpo de color</span>
-              </figcaption>
-            </figure>
-            <figure class="color-card">
-              <div class="img-slot" style="--ratio: 3/4">
-                <img
-                  src="https://preview.redd.it/ferret-colours-have-different-life-span-v0-oz79spv7qo0e1.png?auto=webp&s=fcc274f92c0de9faef380adfe896e09f8caa6e26"
-                  alt="Huron Plateado"
-                />
-              </div>
-              <figcaption>
-                <strong>Plateado</strong
-                ><span>Base clara con pelos de guardia oscuros</span>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ ADOPCIÓN — salida de la madriguera ============ -->
-      <section id="adopcion" class="section section-den">
-        <div class="wrap adopcion-grid">
-          <div class="img-slot adopcion-figure" style="--ratio: 4/5">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5zY4AFpONbSCMbsPkQkShKG_LZvQTR9B5q2i31hrH9d2Pj_WioNjaq4E&s=10"
-              alt="persona sosteniendo un hurón en brazos"
-            />
-          </div>
-          <div class="adopcion-copy">
-            <p class="eyebrow eyebrow-light">Antes de decidir</p>
-            <h2>
-              Un hurón no es un roedor grande.<br />Es un compromiso de una
-              década.
-            </h2>
-            <p>
-              Antes de adoptar, visita un refugio o criador responsable,
-              pregunta por el historial de salud del animal y confirma que tu
-              ciudad permite tenerlos como mascota.
-            </p>
-            <a href="#inicio" class="btn btn-light">Volver al inicio ↑</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <p>Proyecto académico — guía informativa sobre hurones domésticos.</p>
+    <section class="scene scene-why" data-scene="2" data-label="Why Rio" aria-labelledby="title-2">
+      <img class="scene-media" src="https://a-us.storyblok.com/f/1018766/4096x1280/cc828df0fb/brazil_riodejaneiro_cover.jpg/m/1534x479" alt="Aerial view of Rio's coastline and mountains">
+      <div class="why-wash"></div>
+      <div class="scene-inner why-layout">
+        <p class="chapter reveal">My choice</p>
+        <h2 id="title-2" class="reveal">Rio has everything<br>I enjoy</h2>
+        <p class="why-summary reveal">I chose Rio because I can combine my favorite interests in one short trip.</p>
+        <ul class="interests" aria-label="Armando's interests">
+          <li style="--x:8%;--y:30%"><span>Football</span><small>Maracana Stadium</small></li>
+          <li style="--x:69%;--y:24%"><span>Food</span><small>Feijoada and acai</small></li>
+          <li style="--x:8%;--y:72%"><span>Hiking</span><small>Tijuca Forest</small></li>
+          <li style="--x:72%;--y:72%"><span>Photography</span><small>Mountains and beaches</small></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="scene scene-route" data-scene="3" data-label="Route" aria-labelledby="title-3">
+      <div class="route-sky" aria-hidden="true"></div>
+      <div class="scene-inner route-layout">
+        <div class="route-copy reveal">
+          <p class="chapter dark">Getting there</p>
+          <h2 id="title-3">From Quito<br>to Rio</h2>
+          <p>I am going to take a round-trip flight. Most options have one stop.</p>
+        </div>
+        <div class="flight-map" aria-label="Flight route from Quito to Rio de Janeiro">
+          <div class="map-city city-quito"><b>UIO</b><span>Quito</span></div>
+          <svg viewBox="0 0 800 250" aria-hidden="true"><path class="flight-line" d="M70 177 C250 24 530 34 730 154"/><circle cx="70" cy="177" r="7"/><circle cx="730" cy="154" r="7"/><g class="plane"><path d="M0-8 21 0 0 8 5 1-13 4-17 0-13-4 5-1Z"/></g></svg>
+          <div class="map-city city-rio"><b>GIG</b><span>Rio de Janeiro</span></div>
+          <span class="stop-note">one stop</span>
+        </div>
+        <dl class="route-facts reveal">
+          <div><dt>Flight</dt><dd>About US$829</dd></div>
+          <div><dt>Stay</dt><dd>2 nights in Copacabana</dd></div>
+          <div><dt>Local travel</dt><dd>Metro, bus and ride app</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="scene scene-day day-one" data-scene="4" data-label="Day 1" aria-labelledby="title-4">
+      <img class="scene-media day-media" src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Vista_panor%C3%A1mica_R%C3%ADo_de_Janeiro_A742470-Pano20241123.jpg" alt="Bright panoramic view of Rio de Janeiro">
+      <div class="day-wash"></div>
+      <div class="scene-inner day-layout">
+        <header class="day-heading reveal"><p>Day 1</p><h2 id="title-4">Beach, football<br>and Brazilian food</h2></header>
+        <ol class="timeline reveal">
+          <li><time>09:00</time><span><b>Arrive and check in</b> in Copacabana</span></li>
+          <li><time>11:30</time><span><b>Walk and take photos</b> at Copacabana Beach</span></li>
+          <li><time>15:00</time><span><b>Visit Maracana Stadium</b></span></li>
+          <li><time>19:00</time><span><b>Try feijoada</b> at a local restaurant</span></li>
+        </ol>
+        <p class="language-line reveal"><em>I will use</em> the metro because it is simple and affordable.</p>
+      </div>
+    </section>
+
+    <section class="scene scene-day day-two" data-scene="5" data-label="Day 2" aria-labelledby="title-5">
+      <img class="scene-media day-media nature-media" src="https://i.happytovisit.com/tour/christ-the-redeemer-by-van-and-selaron-steps-d712-21715P55-4.jpg" alt="Forest trail on Pedra Bonita in Tijuca National Park">
+      <div class="nature-wash"></div>
+      <div class="scene-inner nature-layout">
+        <header class="day-heading reveal"><p>Day 2</p><h2 id="title-5">Nature and<br>adventure</h2></header>
+        <ol class="timeline nature-timeline reveal">
+          <li><time>07:30</time><span><b>Hike Pedra Bonita</b></span></li>
+          <li><time>12:30</time><span><b>Have lunch</b> and try acai</span></li>
+          <li><time>15:00</time><span><b>Visit Christ the Redeemer</b></span></li>
+          <li><time>18:30</time><span><b>Watch the sunset</b> and take photos</span></li>
+        </ol>
+        <p class="language-line reveal"><em>I must bring</em> water, sunscreen and comfortable shoes.</p>
+      </div>
+      <div class="elevation" aria-hidden="true"><span>688 m</span><i></i><small>Pedra Bonita</small></div>
+    </section>
+
+    <section class="scene scene-day day-three" data-scene="6" data-label="Day 3" aria-labelledby="title-6">
+      <img class="scene-media day-media" src="https://a-us.storyblok.com/f/1018766/4096x1280/cc828df0fb/brazil_riodejaneiro_cover.jpg/m/1534x479" alt="Sugarloaf Mountain and Guanabara Bay">
+      <div class="sun-disc" aria-hidden="true"></div>
+      <div class="day-three-wash"></div>
+      <div class="scene-inner day-layout day-three-layout">
+        <header class="day-heading reveal"><p>Day 3</p><h2 id="title-6">Sugarloaf and<br>a final taste of Rio</h2></header>
+        <ol class="timeline reveal">
+          <li><time>08:30</time><span><b>Ride the cable car</b> to Sugarloaf Mountain</span></li>
+          <li><time>12:30</time><span><b>Eat grilled meat</b> and drink fresh juice</span></li>
+          <li><time>15:00</time><span><b>Explore Ipanema</b> and buy a souvenir</span></li>
+          <li><time>19:00</time><span><b>Go to the airport</b></span></li>
+        </ol>
+        <p class="language-line reveal"><em>I should arrive</em> three hours before my flight.</p>
+      </div>
+    </section>
+
+    <section class="scene scene-plan" data-scene="7" data-label="Plan" aria-labelledby="title-7">
+      <div class="scene-inner plan-layout">
+        <header class="plan-heading reveal"><p class="chapter dark">The complete plan</p><h2 id="title-7">Three days.<br>Three experiences.</h2></header>
+        <div class="journey-line" aria-hidden="true"><i></i></div>
+        <div class="plan-days">
+          <article><b>1</b><h3>The pulse</h3><p>Copacabana<br>Maracana<br>Feijoada</p><small>metro · walking</small></article>
+          <article><b>2</b><h3>The ascent</h3><p>Pedra Bonita<br>Tijuca Forest<br>Christ the Redeemer</p><small>ride app · hiking</small></article>
+          <article><b>3</b><h3>The horizon</h3><p>Sugarloaf<br>Ipanema<br>Return flight</p><small>cable car · metro</small></article>
+        </div>
+        <button class="plan-toggle" type="button" aria-expanded="false" aria-controls="plan-table">View complete table</button>
+        <div id="plan-table" class="plan-table" hidden>
+          <table><thead><tr><th>Day</th><th>Travel</th><th>Activities</th><th>Things to see</th></tr></thead><tbody><tr><td>1</td><td>Plane, ride app, metro</td><td>Beach walk, stadium, dinner</td><td>Copacabana, Maracana</td></tr><tr><td>2</td><td>Ride app, van, walking</td><td>Hiking, photos, sightseeing</td><td>Tijuca, Christ the Redeemer</td></tr><tr><td>3</td><td>Metro, cable car, ride app</td><td>Mountain, food, shopping</td><td>Sugarloaf, Ipanema</td></tr></tbody></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene-budget" data-scene="8" data-label="Budget" aria-labelledby="title-8">
+      <div class="budget-ocean" aria-hidden="true"></div>
+      <div class="scene-inner budget-layout">
+        <div class="budget-title reveal"><p class="chapter">Estimated budget</p><h2 id="title-8"><span>US$</span><strong data-count="1110">0</strong></h2><p>for one traveler</p></div>
+        <div class="costs reveal" aria-label="Budget breakdown">
+          <div style="--size:100%"><span>Round-trip flight</span><i></i><b>US$829</b></div>
+          <div style="--size:36%"><span>Hotel, 2 nights</span><i></i><b>US$105</b></div>
+          <div style="--size:24%"><span>Food</span><i></i><b>US$58</b></div>
+          <div style="--size:26%"><span>Attractions</span><i></i><b>US$62</b></div>
+          <div style="--size:18%"><span>Local transportation</span><i></i><b>US$32</b></div>
+          <div style="--size:14%"><span>Extra money</span><i></i><b>US$24</b></div>
+        </div>
+        <p class="budget-note">Prices may change before the trip. Reference rate: US$1 = R$5.16.</p>
+      </div>
+    </section>
+
+    <section class="scene scene-language" data-scene="9" data-label="English" aria-labelledby="title-9">
+      <div class="scene-inner language-layout">
+        <header class="language-heading reveal"><p class="chapter dark">English in my plan</p><h2 id="title-9">I use English<br>in context</h2></header>
+        <div class="sentences">
+          <p><small>Future plan</small>I am <mark>going to</mark> visit Rio.</p>
+          <p><small>Present perfect</small>I <mark>have never visited</mark> Rio.</p>
+          <p><small>Comparison</small>The flight is <mark>more expensive than</mark> the hotel.</p>
+          <p><small>Advice</small>I <mark>should</mark> arrive early.</p>
+          <p><small>Possibility</small>Prices <mark>may</mark> change.</p>
+          <p><small>Superlative</small>Rio is <mark>the best</mark> destination for me.</p>
+        </div>
+      </div>
+      <svg class="grammar-wave" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 85 C180 112 285 30 435 79 S710 135 875 61 S1110 102 1440 42"/></svg>
+    </section>
+
+    <section class="scene scene-final" data-scene="10" data-label="Conclusion" aria-labelledby="title-10">
+      <img class="scene-media" src="https://www.solcha2025.com.br/resources/content/solcha2025/conteudoimagem_1719836995_1_1_guanabara.jpg" alt="A tropical trail in Tijuca National Park">
+      <div class="final-wash"></div>
+      <div class="scene-inner final-layout">
+        <p class="chapter reveal">My final choice</p>
+        <h2 id="title-10" class="reveal">Rio is active,<br>colorful and memorable.</h2>
+        <p class="final-summary reveal">It combines my interests in one short trip.</p>
+        <p class="final-question reveal">Would you like to visit Rio?</p>
+        <button type="button" class="restart-button" data-restart>Start again ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="scene-progress" aria-label="Presentation progress">
+    <span class="progress-number" aria-live="polite">01</span>
+    <div class="progress-track"><i></i></div>
+    <span>10</span>
+  </div>
+  <nav class="presentation-nav" aria-label="Presentation controls">
+    <button type="button" data-prev aria-label="Previous scene"><span aria-hidden="true">←</span><b>Previous</b></button>
+    <p><span class="key">←</span><span class="key">→</span> to navigate</p>
+    <button type="button" data-fullscreen aria-label="Toggle full screen"><b>Full screen</b><span aria-hidden="true">⛶</span></button>
+    <button type="button" data-next aria-label="Next scene"><b>Next</b><span aria-hidden="true">→</span></button>
+  </nav>
+  <div class="announcer" aria-live="polite" aria-atomic="true"></div>
+  <script src="script.js"></script>
+</body>
 </html>
+
