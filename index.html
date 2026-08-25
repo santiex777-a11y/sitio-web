@@ -12,6 +12,18 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+  <svg class="icon-library" aria-hidden="true">
+    <symbol id="i-football" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m12 7 3 2-1 4h-4L9 9l3-2Zm-7 3 4-1m6 0 4 1m-9 3-2 4m6-4 2 4m-8 0 2 3m6-3-2 3"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><path d="M5 3v7m3-7v7M5 7h3m-1.5 3v11M16 3v18m0-18c4 2 4 7 0 9"/></symbol>
+    <symbol id="i-hike" viewBox="0 0 24 24"><circle cx="14" cy="4" r="2"/><path d="m12 8-3 5 4 2 2 6m-2-13 4 3 3-1M9 13l-4 7m12-5 3 5"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 7h4l2-3h4l2 3h4v13H4Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path d="m3 14 8-3V5c0-1 .5-2 1-2s1 1 1 2v6l8 3v2l-8-1v4l3 2v1l-4-1-4 1v-1l3-2v-4l-8 1Z"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 5v16m18 0v-8H3m4 0V8h5c2 0 3 1 3 3v2M3 18h18"/></symbol>
+    <symbol id="i-train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="15" rx="3"/><path d="M8 7h8M8 12h8m-8 9 3-3m5 0 3 3"/><circle cx="9" cy="15" r="1"/><circle cx="15" cy="15" r="1"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6 7-13a7 7 0 1 0-14 0c0 7 7 13 7 13Z"/><circle cx="12" cy="9" r="2"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 7h18v4a2 2 0 0 0 0 4v4H3v-4a2 2 0 0 0 0-4Z"/><path d="M13 7v12"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M4 6h15a2 2 0 0 1 2 2v11H4a2 2 0 0 1-2-2V6a3 3 0 0 1 3-3h13"/><path d="M16 11h5v4h-5a2 2 0 0 1 0-4Z"/></symbol>
+  </svg>
   <a class="skip-link" href="#presentation">Skip to presentation</a>
   <main id="presentation" class="presentation" aria-label="Three Days in Rio presentation">
 
@@ -40,10 +52,10 @@
         <h2 id="title-2" class="reveal">Rio has everything<br>I enjoy</h2>
         <p class="why-summary reveal">I chose Rio because I can combine my favorite interests in one short trip.</p>
         <ul class="interests" aria-label="Armando's interests">
-          <li style="--x:8%;--y:30%"><span>Football</span><small>Maracana Stadium</small></li>
-          <li style="--x:69%;--y:24%"><span>Food</span><small>Feijoada and acai</small></li>
-          <li style="--x:8%;--y:72%"><span>Hiking</span><small>Tijuca Forest</small></li>
-          <li style="--x:72%;--y:72%"><span>Photography</span><small>Mountains and beaches</small></li>
+          <li style="--x:8%;--y:30%"><svg class="interest-icon"><use href="#i-football"/></svg><span>Football</span><small>Maracana Stadium</small></li>
+          <li style="--x:69%;--y:24%"><svg class="interest-icon"><use href="#i-food"/></svg><span>Food</span><small>Feijoada and acai</small></li>
+          <li style="--x:8%;--y:72%"><svg class="interest-icon"><use href="#i-hike"/></svg><span>Hiking</span><small>Tijuca Forest</small></li>
+          <li style="--x:72%;--y:72%"><svg class="interest-icon"><use href="#i-camera"/></svg><span>Photography</span><small>Mountains and beaches</small></li>
         </ul>
       </div>
     </section>
@@ -63,23 +75,23 @@
           <span class="stop-note">one stop</span>
         </div>
         <dl class="route-facts reveal">
-          <div><dt>Flight</dt><dd>About US$829</dd></div>
-          <div><dt>Stay</dt><dd>2 nights in Copacabana</dd></div>
-          <div><dt>Local travel</dt><dd>Metro, bus and ride app</dd></div>
+          <div><svg class="fact-icon"><use href="#i-plane"/></svg><span><dt>Flight</dt><dd>About US$829</dd></span></div>
+          <div><svg class="fact-icon"><use href="#i-bed"/></svg><span><dt>Stay</dt><dd>2 nights in Copacabana</dd></span></div>
+          <div><svg class="fact-icon"><use href="#i-train"/></svg><span><dt>Local travel</dt><dd>Metro, bus and ride app</dd></span></div>
         </dl>
       </div>
     </section>
 
     <section class="scene scene-day day-one" data-scene="4" data-label="Day 1" aria-labelledby="title-4">
-      <img class="scene-media day-media" src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Vista_panor%C3%A1mica_R%C3%ADo_de_Janeiro_A742470-Pano20241123.jpg" alt="Bright panoramic view of Rio de Janeiro">
+      <div class="day-one-art" aria-hidden="true"><span class="art-sun"></span><span class="art-mountain"></span><span class="art-beach"></span></div>
       <div class="day-wash"></div>
       <div class="scene-inner day-layout">
         <header class="day-heading reveal"><p>Day 1</p><h2 id="title-4">Beach, football<br>and Brazilian food</h2></header>
         <ol class="timeline reveal">
-          <li><time>09:00</time><span><b>Arrive and check in</b> in Copacabana</span></li>
-          <li><time>11:30</time><span><b>Walk and take photos</b> at Copacabana Beach</span></li>
-          <li><time>15:00</time><span><b>Visit Maracana Stadium</b></span></li>
-          <li><time>19:00</time><span><b>Try feijoada</b> at a local restaurant</span></li>
+          <li><time>09:00</time><svg class="timeline-icon"><use href="#i-bed"/></svg><span><b>Arrive and check in</b> in Copacabana</span></li>
+          <li><time>11:30</time><svg class="timeline-icon"><use href="#i-camera"/></svg><span><b>Walk and take photos</b> at Copacabana Beach</span></li>
+          <li><time>15:00</time><svg class="timeline-icon"><use href="#i-football"/></svg><span><b>Visit Maracana Stadium</b></span></li>
+          <li><time>19:00</time><svg class="timeline-icon"><use href="#i-food"/></svg><span><b>Try feijoada</b> at a local restaurant</span></li>
         </ol>
         <p class="language-line reveal"><em>I will use</em> the metro because it is simple and affordable.</p>
       </div>
@@ -91,10 +103,10 @@
       <div class="scene-inner nature-layout">
         <header class="day-heading reveal"><p>Day 2</p><h2 id="title-5">Nature and<br>adventure</h2></header>
         <ol class="timeline nature-timeline reveal">
-          <li><time>07:30</time><span><b>Hike Pedra Bonita</b></span></li>
-          <li><time>12:30</time><span><b>Have lunch</b> and try acai</span></li>
-          <li><time>15:00</time><span><b>Visit Christ the Redeemer</b></span></li>
-          <li><time>18:30</time><span><b>Watch the sunset</b> and take photos</span></li>
+          <li><time>07:30</time><svg class="timeline-icon"><use href="#i-hike"/></svg><span><b>Hike Pedra Bonita</b></span></li>
+          <li><time>12:30</time><svg class="timeline-icon"><use href="#i-food"/></svg><span><b>Have lunch</b> and try acai</span></li>
+          <li><time>15:00</time><svg class="timeline-icon"><use href="#i-pin"/></svg><span><b>Visit Christ the Redeemer</b></span></li>
+          <li><time>18:30</time><svg class="timeline-icon"><use href="#i-camera"/></svg><span><b>Watch the sunset</b> and take photos</span></li>
         </ol>
         <p class="language-line reveal"><em>I must bring</em> water, sunscreen and comfortable shoes.</p>
       </div>
@@ -102,16 +114,16 @@
     </section>
 
     <section class="scene scene-day day-three" data-scene="6" data-label="Day 3" aria-labelledby="title-6">
-      <img class="scene-media day-media" src="https://a-us.storyblok.com/f/1018766/4096x1280/cc828df0fb/brazil_riodejaneiro_cover.jpg/m/1534x479" alt="Sugarloaf Mountain and Guanabara Bay">
+      <div class="day-three-art" aria-hidden="true"><svg viewBox="0 0 700 700"><path class="cable" d="M80 190 620 70"/><path class="peak" d="M0 680 140 410 240 540 420 210 700 680Z"/><g class="car"><rect x="348" y="128" width="94" height="62" rx="15"/><path d="M395 128V94"/></g></svg></div>
       <div class="sun-disc" aria-hidden="true"></div>
       <div class="day-three-wash"></div>
       <div class="scene-inner day-layout day-three-layout">
         <header class="day-heading reveal"><p>Day 3</p><h2 id="title-6">Sugarloaf and<br>a final taste of Rio</h2></header>
         <ol class="timeline reveal">
-          <li><time>08:30</time><span><b>Ride the cable car</b> to Sugarloaf Mountain</span></li>
-          <li><time>12:30</time><span><b>Eat grilled meat</b> and drink fresh juice</span></li>
-          <li><time>15:00</time><span><b>Explore Ipanema</b> and buy a souvenir</span></li>
-          <li><time>19:00</time><span><b>Go to the airport</b></span></li>
+          <li><time>08:30</time><svg class="timeline-icon"><use href="#i-ticket"/></svg><span><b>Ride the cable car</b> to Sugarloaf Mountain</span></li>
+          <li><time>12:30</time><svg class="timeline-icon"><use href="#i-food"/></svg><span><b>Eat grilled meat</b> and drink fresh juice</span></li>
+          <li><time>15:00</time><svg class="timeline-icon"><use href="#i-pin"/></svg><span><b>Explore Ipanema</b> and buy a souvenir</span></li>
+          <li><time>19:00</time><svg class="timeline-icon"><use href="#i-plane"/></svg><span><b>Go to the airport</b></span></li>
         </ol>
         <p class="language-line reveal"><em>I should arrive</em> three hours before my flight.</p>
       </div>
@@ -138,12 +150,12 @@
       <div class="scene-inner budget-layout">
         <div class="budget-title reveal"><p class="chapter">Estimated budget</p><h2 id="title-8"><span>US$</span><strong data-count="1110">0</strong></h2><p>for one traveler</p></div>
         <div class="costs reveal" aria-label="Budget breakdown">
-          <div style="--size:100%"><span>Round-trip flight</span><i></i><b>US$829</b></div>
-          <div style="--size:36%"><span>Hotel, 2 nights</span><i></i><b>US$105</b></div>
-          <div style="--size:24%"><span>Food</span><i></i><b>US$58</b></div>
-          <div style="--size:26%"><span>Attractions</span><i></i><b>US$62</b></div>
-          <div style="--size:18%"><span>Local transportation</span><i></i><b>US$32</b></div>
-          <div style="--size:14%"><span>Extra money</span><i></i><b>US$24</b></div>
+          <div style="--size:100%"><svg class="cost-icon"><use href="#i-plane"/></svg><span>Round-trip flight</span><i></i><b>US$829</b></div>
+          <div style="--size:36%"><svg class="cost-icon"><use href="#i-bed"/></svg><span>Hotel, 2 nights</span><i></i><b>US$105</b></div>
+          <div style="--size:24%"><svg class="cost-icon"><use href="#i-food"/></svg><span>Food</span><i></i><b>US$58</b></div>
+          <div style="--size:26%"><svg class="cost-icon"><use href="#i-ticket"/></svg><span>Attractions</span><i></i><b>US$62</b></div>
+          <div style="--size:18%"><svg class="cost-icon"><use href="#i-train"/></svg><span>Local transportation</span><i></i><b>US$32</b></div>
+          <div style="--size:14%"><svg class="cost-icon"><use href="#i-wallet"/></svg><span>Extra money</span><i></i><b>US$24</b></div>
         </div>
         <p class="budget-note">Prices may change before the trip. Reference rate: US$1 = R$5.16.</p>
       </div>
