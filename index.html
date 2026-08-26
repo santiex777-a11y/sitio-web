@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css?v=20260825-cinema3">
+  <link rel="stylesheet" href="estilos.css?v=20260825-cinema4">
 </head>
 <body>
   <svg class="icon-library" aria-hidden="true">
@@ -52,10 +52,10 @@
         <h2 id="title-2" class="reveal">Rio has everything<br>I enjoy</h2>
         <p class="why-summary reveal">I chose Rio because I can combine my favorite interests in one short trip.</p>
         <ul class="interests" aria-label="Armando's interests">
-          <li style="--x:8%;--y:30%"><svg class="interest-icon"><use href="#i-football"/></svg><span>Football</span><small>Maracana Stadium</small></li>
-          <li style="--x:69%;--y:24%"><svg class="interest-icon"><use href="#i-food"/></svg><span>Food</span><small>Feijoada and acai</small></li>
-          <li style="--x:8%;--y:72%"><svg class="interest-icon"><use href="#i-hike"/></svg><span>Hiking</span><small>Tijuca Forest</small></li>
-          <li style="--x:72%;--y:72%"><svg class="interest-icon"><use href="#i-camera"/></svg><span>Photography</span><small>Mountains and beaches</small></li>
+          <li><svg class="interest-icon"><use href="#i-football"/></svg><span>Football</span><small>Maracana Stadium</small></li>
+          <li><svg class="interest-icon"><use href="#i-food"/></svg><span>Food</span><small>Feijoada and acai</small></li>
+          <li><svg class="interest-icon"><use href="#i-hike"/></svg><span>Hiking</span><small>Tijuca Forest</small></li>
+          <li><svg class="interest-icon"><use href="#i-camera"/></svg><span>Photography</span><small>Mountains and beaches</small></li>
         </ul>
       </div>
     </section>
@@ -132,13 +132,15 @@
     <section class="scene scene-plan" data-scene="7" data-label="Plan" aria-labelledby="title-7">
       <div class="scene-inner plan-layout">
         <header class="plan-heading reveal"><p class="chapter dark">The complete plan</p><h2 id="title-7">Three days.<br>Three experiences.</h2></header>
-        <div class="journey-line" aria-hidden="true"><i></i></div>
         <div class="plan-days">
-          <article><b>1</b><h3>The pulse</h3><p>Copacabana<br>Maracana<br>Feijoada</p><small>metro · walking</small></article>
-          <article><b>2</b><h3>The ascent</h3><p>Pedra Bonita<br>Tijuca Forest<br>Christ the Redeemer</p><small>ride app · hiking</small></article>
-          <article><b>3</b><h3>The horizon</h3><p>Sugarloaf<br>Ipanema<br>Return flight</p><small>cable car · metro</small></article>
+          <article><b>1</b><h3>The pulse</h3><p>Copacabana<br>Maracana<br>Feijoada</p><ul class="mode-tags" aria-label="Day 1 transportation"><li><svg><use href="#i-train"/></svg>Metro</li><li><svg><use href="#i-hike"/></svg>Walking</li></ul></article>
+          <article><b>2</b><h3>The ascent</h3><p>Pedra Bonita<br>Tijuca Forest<br>Christ the Redeemer</p><ul class="mode-tags" aria-label="Day 2 transportation"><li><svg><use href="#i-pin"/></svg>Ride app</li><li><svg><use href="#i-hike"/></svg>Hiking</li></ul></article>
+          <article><b>3</b><h3>The horizon</h3><p>Sugarloaf<br>Ipanema<br>Return flight</p><ul class="mode-tags" aria-label="Day 3 transportation"><li><svg><use href="#i-ticket"/></svg>Cable car</li><li><svg><use href="#i-train"/></svg>Metro</li></ul></article>
         </div>
-        <button class="plan-toggle" type="button" aria-expanded="false" aria-controls="plan-table">View complete table</button>
+        <div class="plan-summary reveal">
+          <p><strong>3 days</strong><span>12 key moments</span><span>1 traveler</span></p>
+          <button class="plan-toggle" type="button" aria-expanded="false" aria-controls="plan-table">View complete table</button>
+        </div>
         <div id="plan-table" class="plan-table" hidden>
           <table><thead><tr><th>Day</th><th>Travel</th><th>Activities</th><th>Things to see</th></tr></thead><tbody><tr><td>1</td><td>Plane, ride app, metro</td><td>Beach walk, stadium, dinner</td><td>Copacabana, Maracana</td></tr><tr><td>2</td><td>Ride app, van, walking</td><td>Hiking, photos, sightseeing</td><td>Tijuca, Christ the Redeemer</td></tr><tr><td>3</td><td>Metro, cable car, ride app</td><td>Mountain, food, shopping</td><td>Sugarloaf, Ipanema</td></tr></tbody></table>
         </div>
@@ -201,7 +203,7 @@
     <button type="button" data-next aria-label="Next scene"><b>Next</b><span aria-hidden="true">→</span></button>
   </nav>
   <div class="announcer" aria-live="polite" aria-atomic="true"></div>
-  <script src="script.js?v=20260825-cinema3"></script>
+  <script src="script.js?v=20260825-cinema4"></script>
 </body>
 </html>
 
