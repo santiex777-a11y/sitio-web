@@ -6,10 +6,11 @@
   <meta name="theme-color" content="#075486">
   <meta name="description" content="Three Days in Rio, an A2.2 English presentation by Armando Herrera.">
   <title>Three Days in Rio · Armando Herrera</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23075486%22/><path d=%22M10 42c12-2 18-18 28-18 7 0 10 8 16 10%22 fill=%22none%22 stroke=%22%23f6cf36%22 stroke-width=%226%22 stroke-linecap=%22round%22/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css?v=20260825-cinema5">
+  <link rel="stylesheet" href="estilos.css?v=20260826-cinema6">
 </head>
 <body>
   <svg class="icon-library" aria-hidden="true">
@@ -27,8 +28,8 @@
   <a class="skip-link" href="#presentation">Skip to presentation</a>
   <main id="presentation" class="presentation" aria-label="Three Days in Rio presentation">
 
-    <section class="scene scene-cover is-active" data-scene="1" data-label="Welcome" aria-labelledby="title-1">
-      <img class="scene-media hero-media" src="assets/rio-panorama.jpg" alt="Panoramic view of Rio de Janeiro and Sugarloaf Mountain">
+    <section class="scene scene-cover is-active" data-scene="1" data-label="Welcome" aria-labelledby="title-1" aria-hidden="false">
+      <img class="scene-media hero-media" src="assets/rio-panorama.jpg" width="984" height="553" fetchpriority="high" alt="Panoramic view of Rio de Janeiro and Sugarloaf Mountain">
       <div class="cover-wash"></div>
       <div class="scene-inner cover-layout">
         <div class="cover-copy reveal">
@@ -44,23 +45,23 @@
       <svg class="horizon horizon-light" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true"><path d="M0 98 C135 96 190 70 290 85 S480 115 585 67 S775 85 875 55 S1050 74 1130 39 S1285 55 1440 24"/></svg>
     </section>
 
-    <section class="scene scene-why" data-scene="2" data-label="Why Rio" aria-labelledby="title-2">
-      <img class="scene-media" src="assets/rio-aerial.jpg" alt="Aerial view of Rio's coastline and mountains">
+    <section class="scene scene-why" data-scene="2" data-label="Why Rio" aria-labelledby="title-2" aria-hidden="true" inert>
+      <img class="scene-media" src="assets/rio-aerial.jpg" width="780" height="521" decoding="async" alt="Aerial view of Rio's coastline and mountains">
       <div class="why-wash"></div>
       <div class="scene-inner why-layout">
         <p class="chapter reveal">My choice</p>
         <h2 id="title-2" class="reveal">Rio has everything<br>I enjoy</h2>
         <p class="why-summary reveal">I chose Rio because I can combine my favorite interests in one short trip.</p>
         <ul class="interests" aria-label="Armando's interests">
-          <li><svg class="interest-icon"><use href="#i-football"/></svg><span>Football</span><small>Maracana Stadium</small></li>
-          <li><svg class="interest-icon"><use href="#i-food"/></svg><span>Food</span><small>Feijoada and acai</small></li>
-          <li><svg class="interest-icon"><use href="#i-hike"/></svg><span>Hiking</span><small>Tijuca Forest</small></li>
-          <li><svg class="interest-icon"><use href="#i-camera"/></svg><span>Photography</span><small>Mountains and beaches</small></li>
+          <li><svg class="interest-icon" aria-hidden="true" focusable="false"><use href="#i-football"/></svg><span>Football</span><small>Maracanã Stadium</small></li>
+          <li><svg class="interest-icon" aria-hidden="true" focusable="false"><use href="#i-food"/></svg><span>Food</span><small>Feijoada and açaí</small></li>
+          <li><svg class="interest-icon" aria-hidden="true" focusable="false"><use href="#i-hike"/></svg><span>Hiking</span><small>Tijuca Forest</small></li>
+          <li><svg class="interest-icon" aria-hidden="true" focusable="false"><use href="#i-camera"/></svg><span>Photography</span><small>Mountains and beaches</small></li>
         </ul>
       </div>
     </section>
 
-    <section class="scene scene-route" data-scene="3" data-label="Route" aria-labelledby="title-3">
+    <section class="scene scene-route" data-scene="3" data-label="Quito to Rio" aria-labelledby="title-3" aria-hidden="true" inert>
       <div class="route-sky" aria-hidden="true"></div>
       <div class="scene-inner route-layout">
         <div class="route-copy reveal">
@@ -68,72 +69,72 @@
           <h2 id="title-3">From Quito<br>to Rio</h2>
           <p>I am going to take a round-trip flight. Most options have one stop.</p>
         </div>
-        <div class="flight-map" aria-label="Flight route from Quito to Rio de Janeiro">
+        <figure class="flight-map" role="img" aria-label="Flight route from Quito to Rio de Janeiro with one stop">
           <div class="map-city city-quito"><b>UIO</b><span>Quito</span></div>
           <svg viewBox="0 0 800 250" aria-hidden="true"><path class="flight-line" d="M70 177 C250 24 530 34 730 154"/><circle cx="70" cy="177" r="7"/><circle cx="730" cy="154" r="7"/><g class="plane"><path d="M0-8 21 0 0 8 5 1-13 4-17 0-13-4 5-1Z"/></g></svg>
           <div class="map-city city-rio"><b>GIG</b><span>Rio de Janeiro</span></div>
           <span class="stop-note">one stop</span>
-        </div>
-        <dl class="route-facts reveal">
-          <div><svg class="fact-icon"><use href="#i-plane"/></svg><span><dt>Flight</dt><dd>About US$829</dd></span></div>
-          <div><svg class="fact-icon"><use href="#i-bed"/></svg><span><dt>Stay</dt><dd>2 nights in Copacabana</dd></span></div>
-          <div><svg class="fact-icon"><use href="#i-train"/></svg><span><dt>Local travel</dt><dd>Metro, bus and ride app</dd></span></div>
-        </dl>
+        </figure>
+        <ul class="route-facts reveal" aria-label="Travel facts">
+          <li><svg class="fact-icon" aria-hidden="true" focusable="false"><use href="#i-plane"/></svg><span><small class="fact-label">Flight</small><strong class="fact-value">About US$829</strong></span></li>
+          <li><svg class="fact-icon" aria-hidden="true" focusable="false"><use href="#i-bed"/></svg><span><small class="fact-label">Stay</small><strong class="fact-value">2 nights in Copacabana</strong></span></li>
+          <li><svg class="fact-icon" aria-hidden="true" focusable="false"><use href="#i-train"/></svg><span><small class="fact-label">Local travel</small><strong class="fact-value">Metro, bus and ride app</strong></span></li>
+        </ul>
       </div>
     </section>
 
-    <section class="scene scene-day day-one" data-scene="4" data-label="Day 1" aria-labelledby="title-4">
-      <img class="scene-media day-media day-one-photo" src="assets/day1-cinematic-v2.webp" alt="Golden light over Copacabana Beach, with Rio's mountains and a football on the promenade">
+    <section class="scene scene-day day-one" data-scene="4" data-label="Day 1 · The pulse" aria-labelledby="title-4" aria-hidden="true" inert>
+      <img class="scene-media day-media day-one-photo" src="assets/day1-cinematic-v2.webp" width="1600" height="900" decoding="async" alt="Golden light over Copacabana Beach, with Rio's mountains and a football on the promenade">
       <div class="day-wash"></div>
       <div class="scene-inner day-layout">
         <header class="day-heading reveal"><p>Day 1</p><h2 id="title-4">Beach, football<br>and Brazilian food</h2></header>
         <ol class="timeline reveal">
-          <li><time>09:00</time><svg class="timeline-icon"><use href="#i-bed"/></svg><span><b>Arrive and check in</b> in Copacabana</span></li>
-          <li><time>11:30</time><svg class="timeline-icon"><use href="#i-camera"/></svg><span><b>Walk and take photos</b> at Copacabana Beach</span></li>
-          <li><time>15:00</time><svg class="timeline-icon"><use href="#i-football"/></svg><span><b>Visit Maracana Stadium</b></span></li>
-          <li><time>19:00</time><svg class="timeline-icon"><use href="#i-food"/></svg><span><b>Try feijoada</b> at a local restaurant</span></li>
+          <li><time>09:00</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-bed"/></svg><span><b>Arrive and check in</b> in Copacabana</span></li>
+          <li><time>11:30</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-camera"/></svg><span><b>Walk and take photos</b> at Copacabana Beach</span></li>
+          <li><time>15:00</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-football"/></svg><span><b>Visit Maracanã Stadium</b></span></li>
+          <li><time>19:00</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-food"/></svg><span><b>Try feijoada</b> at a local restaurant</span></li>
         </ol>
         <p class="language-line reveal"><em>I will use</em> the metro because it is simple and affordable.</p>
       </div>
     </section>
 
-    <section class="scene scene-day day-two" data-scene="5" data-label="Day 2" aria-labelledby="title-5">
-      <img class="scene-media day-media nature-media" src="assets/pedra-bonita.jpg" alt="Forest trail on Pedra Bonita in Tijuca National Park">
+    <section class="scene scene-day day-two" data-scene="5" data-label="Day 2 · The ascent" aria-labelledby="title-5" aria-hidden="true" inert>
+      <img class="scene-media day-media nature-media" src="assets/pedra-bonita.jpg" width="700" height="525" decoding="async" alt="Forest trail on Pedra Bonita in Tijuca National Park">
       <div class="nature-wash"></div>
       <div class="scene-inner nature-layout">
         <header class="day-heading reveal"><p>Day 2</p><h2 id="title-5">Nature and<br>adventure</h2></header>
         <ol class="timeline nature-timeline reveal">
-          <li><time>07:30</time><svg class="timeline-icon"><use href="#i-hike"/></svg><span><b>Hike Pedra Bonita</b></span></li>
-          <li><time>12:30</time><svg class="timeline-icon"><use href="#i-food"/></svg><span><b>Have lunch</b> and try acai</span></li>
-          <li><time>15:00</time><svg class="timeline-icon"><use href="#i-pin"/></svg><span><b>Visit Christ the Redeemer</b></span></li>
-          <li><time>18:30</time><svg class="timeline-icon"><use href="#i-camera"/></svg><span><b>Watch the sunset</b> and take photos</span></li>
+          <li><time>07:30</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-hike"/></svg><span><b>Hike Pedra Bonita</b></span></li>
+          <li><time>12:30</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-food"/></svg><span><b>Have lunch</b> and try açaí</span></li>
+          <li><time>15:00</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span><b>Visit Christ the Redeemer</b></span></li>
+          <li><time>18:30</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-camera"/></svg><span><b>Watch the sunset</b> and take photos</span></li>
         </ol>
         <p class="language-line reveal"><em>I must bring</em> water, sunscreen and comfortable shoes.</p>
       </div>
       <div class="elevation" aria-hidden="true"><span>688 m</span><i></i><small>Pedra Bonita</small></div>
     </section>
 
-    <section class="scene scene-day day-three" data-scene="6" data-label="Day 3" aria-labelledby="title-6">
-      <img class="scene-media day-media day-three-photo" src="assets/day3-cinematic-v2.webp" alt="Sugarloaf Mountain cable car over Guanabara Bay at golden hour">
+    <section class="scene scene-day day-three" data-scene="6" data-label="Day 3 · The horizon" aria-labelledby="title-6" aria-hidden="true" inert>
+      <img class="scene-media day-media day-three-photo" src="assets/day3-cinematic-v2.webp" width="1600" height="900" decoding="async" alt="Sugarloaf Mountain cable car over Guanabara Bay at golden hour">
       <div class="sun-disc" aria-hidden="true"></div>
       <div class="day-three-wash"></div>
       <div class="scene-inner day-layout day-three-layout">
         <header class="day-heading reveal"><p>Day 3</p><h2 id="title-6">Sugarloaf and<br>a final taste of Rio</h2></header>
         <ol class="timeline reveal">
-          <li><time>08:30</time><svg class="timeline-icon"><use href="#i-ticket"/></svg><span><b>Ride the cable car</b> to Sugarloaf Mountain</span></li>
-          <li><time>12:30</time><svg class="timeline-icon"><use href="#i-food"/></svg><span><b>Eat grilled meat</b> and drink fresh juice</span></li>
-          <li><time>15:00</time><svg class="timeline-icon"><use href="#i-pin"/></svg><span><b>Explore Ipanema</b> and buy a souvenir</span></li>
-          <li><time>19:00</time><svg class="timeline-icon"><use href="#i-plane"/></svg><span><b>Go to the airport</b></span></li>
+          <li><time>08:30</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-ticket"/></svg><span><b>Ride the cable car</b> to Sugarloaf Mountain</span></li>
+          <li><time>12:30</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-food"/></svg><span><b>Eat grilled meat</b> and drink fresh juice</span></li>
+          <li><time>15:00</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span><b>Explore Ipanema</b> and buy a souvenir</span></li>
+          <li><time>19:00</time><svg class="timeline-icon" aria-hidden="true" focusable="false"><use href="#i-plane"/></svg><span><b>Go to the airport</b></span></li>
         </ol>
         <p class="language-line reveal"><em>I should arrive</em> three hours before my flight.</p>
       </div>
     </section>
 
-    <section class="scene scene-plan" data-scene="7" data-label="Plan" aria-labelledby="title-7">
+    <section class="scene scene-plan" data-scene="7" data-label="Complete plan" aria-labelledby="title-7" aria-hidden="true" inert>
       <div class="scene-inner plan-layout">
         <header class="plan-heading reveal"><p class="chapter dark">The complete plan</p><h2 id="title-7">Three days.<br>Three experiences.</h2></header>
         <div class="plan-days">
-          <article><b>1</b><h3>The pulse</h3><p>Copacabana<br>Maracana<br>Feijoada</p><ul class="mode-tags" aria-label="Day 1 transportation"><li><svg><use href="#i-train"/></svg>Metro</li><li><svg><use href="#i-hike"/></svg>Walking</li></ul></article>
+          <article><b>1</b><h3>The pulse</h3><p>Copacabana<br>Maracanã<br>Feijoada</p><ul class="mode-tags" aria-label="Day 1 transportation"><li><svg aria-hidden="true" focusable="false"><use href="#i-train"/></svg>Metro</li><li><svg aria-hidden="true" focusable="false"><use href="#i-hike"/></svg>Walking</li></ul></article>
           <article><b>2</b><h3>The ascent</h3><p>Pedra Bonita<br>Tijuca Forest<br>Christ the Redeemer</p><ul class="mode-tags" aria-label="Day 2 transportation"><li><svg><use href="#i-pin"/></svg>Ride app</li><li><svg><use href="#i-hike"/></svg>Hiking</li></ul></article>
           <article><b>3</b><h3>The horizon</h3><p>Sugarloaf<br>Ipanema<br>Return flight</p><ul class="mode-tags" aria-label="Day 3 transportation"><li><svg><use href="#i-ticket"/></svg>Cable car</li><li><svg><use href="#i-train"/></svg>Metro</li></ul></article>
         </div>
@@ -141,31 +142,39 @@
           <p><strong>3 days</strong><span>12 key moments</span><span>1 traveler</span></p>
           <button class="plan-toggle" type="button" aria-expanded="false" aria-controls="plan-table">View complete table</button>
         </div>
-        <div id="plan-table" class="plan-table" hidden>
-          <table><thead><tr><th>Day</th><th>Travel</th><th>Activities</th><th>Things to see</th></tr></thead><tbody><tr><td>1</td><td>Plane, ride app, metro</td><td>Beach walk, stadium, dinner</td><td>Copacabana, Maracana</td></tr><tr><td>2</td><td>Ride app, van, walking</td><td>Hiking, photos, sightseeing</td><td>Tijuca, Christ the Redeemer</td></tr><tr><td>3</td><td>Metro, cable car, ride app</td><td>Mountain, food, shopping</td><td>Sugarloaf, Ipanema</td></tr></tbody></table>
-        </div>
+        <dialog id="plan-table" class="plan-table" aria-labelledby="plan-dialog-title">
+          <div class="plan-table-head">
+            <div><p>Three-day itinerary</p><h3 id="plan-dialog-title">Complete travel table</h3></div>
+            <button type="button" class="plan-close" data-plan-close aria-label="Close complete table">Close <span aria-hidden="true">×</span></button>
+          </div>
+          <p class="table-hint" aria-hidden="true">Swipe to see all columns →</p>
+          <div class="table-scroll">
+            <table><thead><tr><th>Day</th><th>Travel</th><th>Activities</th><th>Things to see</th></tr></thead><tbody><tr><td>1</td><td>Plane, ride app, metro</td><td>Beach walk, stadium, dinner</td><td>Copacabana, Maracanã</td></tr><tr><td>2</td><td>Ride app, van, walking</td><td>Hiking, photos, sightseeing</td><td>Tijuca, Christ the Redeemer</td></tr><tr><td>3</td><td>Metro, cable car, ride app</td><td>Mountain, food, shopping</td><td>Sugarloaf, Ipanema</td></tr></tbody></table>
+          </div>
+        </dialog>
       </div>
     </section>
 
-    <section class="scene scene-budget" data-scene="8" data-label="Budget" aria-labelledby="title-8">
+    <section class="scene scene-budget" data-scene="8" data-label="Budget" aria-labelledby="title-8" aria-hidden="true" inert>
       <div class="budget-ocean" aria-hidden="true"></div>
       <div class="scene-inner budget-layout">
-        <div class="budget-title reveal"><p class="chapter">Estimated budget</p><h2 id="title-8"><span>US$</span><strong data-count="1110">0</strong></h2><p>for one traveler</p></div>
+        <div class="budget-title reveal"><p class="chapter">Estimated budget</p><h2 id="title-8"><span>US$</span><strong data-count="1110">1,110</strong></h2><p>for one traveler</p></div>
         <div class="costs reveal" aria-label="Budget breakdown">
-          <div style="--size:100%"><svg class="cost-icon"><use href="#i-plane"/></svg><span>Round-trip flight</span><i></i><b>US$829</b></div>
-          <div style="--size:36%"><svg class="cost-icon"><use href="#i-bed"/></svg><span>Hotel, 2 nights</span><i></i><b>US$105</b></div>
-          <div style="--size:24%"><svg class="cost-icon"><use href="#i-food"/></svg><span>Food</span><i></i><b>US$58</b></div>
-          <div style="--size:26%"><svg class="cost-icon"><use href="#i-ticket"/></svg><span>Attractions</span><i></i><b>US$62</b></div>
-          <div style="--size:18%"><svg class="cost-icon"><use href="#i-train"/></svg><span>Local transportation</span><i></i><b>US$32</b></div>
-          <div style="--size:14%"><svg class="cost-icon"><use href="#i-wallet"/></svg><span>Extra money</span><i></i><b>US$24</b></div>
+          <div style="--size:100%"><svg class="cost-icon" aria-hidden="true" focusable="false"><use href="#i-plane"/></svg><span>Round-trip flight</span><i></i><b>US$829</b></div>
+          <div style="--size:36%"><svg class="cost-icon" aria-hidden="true" focusable="false"><use href="#i-bed"/></svg><span>Hotel, 2 nights</span><i></i><b>US$105</b></div>
+          <div style="--size:24%"><svg class="cost-icon" aria-hidden="true" focusable="false"><use href="#i-food"/></svg><span>Food</span><i></i><b>US$58</b></div>
+          <div style="--size:26%"><svg class="cost-icon" aria-hidden="true" focusable="false"><use href="#i-ticket"/></svg><span>Attractions</span><i></i><b>US$62</b></div>
+          <div style="--size:18%"><svg class="cost-icon" aria-hidden="true" focusable="false"><use href="#i-train"/></svg><span>Local transportation</span><i></i><b>US$32</b></div>
+          <div style="--size:14%"><svg class="cost-icon" aria-hidden="true" focusable="false"><use href="#i-wallet"/></svg><span>Extra money</span><i></i><b>US$24</b></div>
+          <p class="budget-insight"><strong>75%</strong><span>of the budget is the flight.</span></p>
         </div>
         <p class="budget-note">Prices may change before the trip. Reference rate: US$1 = R$5.16.</p>
       </div>
     </section>
 
-    <section class="scene scene-language" data-scene="9" data-label="English" aria-labelledby="title-9">
+    <section class="scene scene-language" data-scene="9" data-label="English in context" aria-labelledby="title-9" aria-hidden="true" inert>
       <div class="scene-inner language-layout">
-        <header class="language-heading reveal"><p class="chapter dark">English in my plan</p><h2 id="title-9">I use English<br>in context</h2></header>
+        <header class="language-heading reveal"><p class="chapter dark">English in my plan</p><h2 id="title-9">I use English<br>in context</h2><p class="language-note">Modal verbs use the base form: <strong>must, should, may + verb</strong>.</p></header>
         <div class="sentences">
           <p><small>Future plan</small><span class="sentence-copy">I am <mark>going to</mark> visit Rio.</span></p>
           <p><small>Present perfect</small><span class="sentence-copy">I <mark>have never visited</mark> Rio.</span></p>
@@ -178,8 +187,8 @@
       <svg class="grammar-wave" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 85 C180 112 285 30 435 79 S710 135 875 61 S1110 102 1440 42"/></svg>
     </section>
 
-    <section class="scene scene-final" data-scene="10" data-label="Conclusion" aria-labelledby="title-10">
-      <img class="scene-media" src="assets/tijuca-trail.jpg" alt="A tropical trail in Tijuca National Park">
+    <section class="scene scene-final" data-scene="10" data-label="Conclusion" aria-labelledby="title-10" aria-hidden="true" inert>
+      <img class="scene-media" src="assets/tijuca-trail.jpg" width="1000" height="750" decoding="async" alt="A tropical trail in Tijuca National Park">
       <div class="final-wash"></div>
       <div class="scene-inner final-layout">
         <p class="chapter reveal">My final choice</p>
@@ -191,19 +200,23 @@
     </section>
   </main>
 
-  <div class="scene-progress" aria-label="Presentation progress">
+  <div class="scene-progress" role="progressbar" aria-label="Presentation progress" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1">
+    <span class="progress-label" data-progress-label>Welcome</span>
     <span class="progress-number" aria-live="polite">01</span>
     <div class="progress-track"><i></i></div>
     <span>10</span>
   </div>
   <nav class="presentation-nav" aria-label="Presentation controls">
-    <button type="button" data-prev aria-label="Previous scene"><span aria-hidden="true">←</span><b>Previous</b></button>
-    <p><span class="key">←</span><span class="key">→</span> to navigate</p>
-    <button type="button" data-fullscreen aria-label="Toggle full screen"><b>Full screen</b><span aria-hidden="true">⛶</span></button>
+    <button type="button" data-prev aria-label="Previous scene" disabled><span aria-hidden="true">←</span><b>Previous</b></button>
+    <div class="nav-center">
+      <p class="nav-scene"><small data-nav-count>Scene 01 of 10</small><strong data-nav-label>Welcome</strong></p>
+      <p class="nav-help" aria-hidden="true"><span class="key">←</span><span class="key">→</span></p>
+      <button type="button" data-fullscreen aria-label="Enter full screen"><b>Full screen</b><span aria-hidden="true">⛶</span></button>
+    </div>
     <button type="button" data-next aria-label="Next scene"><b>Next</b><span aria-hidden="true">→</span></button>
   </nav>
   <div class="announcer" aria-live="polite" aria-atomic="true"></div>
-  <script src="script.js?v=20260825-cinema4"></script>
+  <script src="script.js?v=20260825-cinema6"></script>
 </body>
 </html>
 
