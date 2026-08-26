@@ -87,7 +87,7 @@ h2 { font-size: clamp(52px, 7vw, 112px); line-height: .88; }
 .flight-map circle { fill: var(--solar); stroke: var(--deep); stroke-width: 4; }
 .plane { fill: var(--deep); offset-path: path("M70 177 C250 24 530 34 730 154"); offset-distance: 0%; transition: offset-distance 1.7s var(--ease) .2s; }
 .is-active .plane { offset-distance: 100%; }
-.map-city { position: absolute; }
+.map-city { position:absolute; transform:translateY(76%); }
 .map-city b { display: block; font-size: clamp(38px, 4vw, 70px); letter-spacing: -.06em; }
 .map-city span { color: oklch(0.48 0.03 245); }
 .city-quito { left: 1%; bottom: 10%; }
@@ -201,7 +201,8 @@ button:focus-visible, a:focus-visible { outline:3px solid var(--solar); outline-
   .plan-layout { grid-template-columns:1fr; grid-template-rows:auto auto auto; grid-template-areas:"heading" "days" "summary"; align-content:center; gap:20px; padding-bottom:72px; }
   .route-copy h2,.day-heading h2,.language-heading h2,.plan-heading h2 { font-size:clamp(46px,12vw,78px) }
   .route-copy > p:last-child { font-size:16px }
-  .flight-map { width:88%; justify-self:center }
+  .flight-map { width:88%; justify-self:center; margin-bottom:72px }
+  .map-city { transform:translateY(95%) }
   .route-facts { position:static; grid-template-columns:1fr 1fr 1fr; gap:12px }
   .day-media { inset:0; width:100%; left:0 }
   .day-wash,.nature-wash,.day-three-wash { background:linear-gradient(0deg,oklch(0.16 0.06 245 / .92),oklch(0.18 0.06 245 / .25)) }
